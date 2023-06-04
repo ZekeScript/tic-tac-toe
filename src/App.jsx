@@ -4,7 +4,7 @@ import { WinnerModal } from './components/WinnerModal'
 import { TURNS } from './constants'
 import { checkEndGame, checkWinner } from './logic/CheckWinner'
 
-function App () {
+function App() {
   const [board, setBoard] = useState(Array(9).fill(null))
   const [turn, setTurn] = useState(TURNS.X)
   const [winner, setWinner] = useState(null)
