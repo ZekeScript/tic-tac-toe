@@ -15,9 +15,23 @@
   -webkit-text-size-adjust: 100%;
 }
 
+header {
+  position: fixed;
+  display: flex;
+  top: 5vh;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  color: #eee;
+}
+
 body {
   margin: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
@@ -29,15 +43,19 @@ body {
   box-sizing: border-box;
 }
 
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
 .board {
   width: fit-content;
   margin: 40px auto;
   text-align: center;
-}
-
-.board h1 {
-  color: #eee;
-  margin-bottom: 16px;
 }
 
 .board button {

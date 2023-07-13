@@ -10,7 +10,9 @@ import { SaveGame, resetGameStorage } from './logic/storage'
 function App () {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')
-    return boardFromStorage ? JSON.parse(boardFromStorage) : Array(9).fill(null)
+    return boardFromStorage
+      ? JSON.parse(boardFromStorage)
+      : Array(9).fill(null)
   })
   const [turn, setTurn] = useState(() => {
     const turnFromStorage = window.localStorage.getItem('turn')
@@ -58,12 +60,22 @@ function App () {
   }
 
   return (
-    <main className='board'>
-      <h1>Tic Tac Toe</h1>
-      <GameBoard board={board} updateBoard={updateBoard} />
-      <TurnSection turn={turn} />
-      <button onClick={resetGame}>Reset</button>
-      <WinnerModal resetGame={resetGame} winner={winner} />
+    <main>
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+      <section className='board'>
+        <GameBoard board={board} updateBoard={updateBoard} />
+        <TurnSection turn={turn} />
+        <button onClick={resetGame}>Reset</button>
+        <WinnerModal resetGame={resetGame} winner={winner} />
+      </section>
+      <footer>
+        <div className='signature'>
+          <p>Developed by <span className='signature__author'>ZekeScript</span></p>
+          <p>&copy; 2023. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
   )
 }
