@@ -10,21 +10,13 @@ A classic Tic Tac Toe game with data persistence in local storage.
    git clone https://github.com/ZekeScript/tic-tac-toe.git
    ```
 
-2. Navigate to the project directory:
+2. Install the dependencies:
 
    ```bash
    cd tic-tac-toe
-   ```
-
-3. Install the dependencies:
-
-   ```bash
    npm install
    ```
-
-## Usage
-
-To start the game, in local.
+3. To start the game, in local.
 
    ```bash
    npm run
@@ -33,6 +25,15 @@ To start the game, in local.
 ## Controls
 
 - Click on any empty square with the mouse to make a move.
+
+## Screenshots
+
+![image](https://github.com/ZekeScript/tic-tac-toe/assets/57415369/7bc63f16-1380-412a-b655-6f0c9d565040)
+![image](https://github.com/ZekeScript/tic-tac-toe/assets/57415369/0493b4c3-df19-4284-83bc-d0f6d8458a5a)
+![image](https://github.com/ZekeScript/tic-tac-toe/assets/57415369/94516b54-5ab5-4940-bef0-5e696f93aeb8)
+![image](https://github.com/ZekeScript/tic-tac-toe/assets/57415369/121c70d5-f622-486d-9d79-22f2b199318c)
+![image](https://github.com/ZekeScript/tic-tac-toe/assets/57415369/d27c9192-b0a6-4ed8-94ed-f11180149ea9)
+
 
 ## Features
 
