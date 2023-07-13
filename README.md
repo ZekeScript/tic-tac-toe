@@ -24,7 +24,11 @@ A classic Tic Tac Toe game with data persistence in local storage.
 
 ## Usage
 
-To start the game, open the `index.html` file in your web browser.
+To start the game, in local.
+
+   ```bash
+   npm run
+   ```
 
 ## Controls
 
@@ -44,6 +48,10 @@ The game relies on the following dependencies:
 - Canvas Confetti
 
 Please ensure you have these dependencies installed before running the game.
+
+## Deployment
+
+The project has been deployed and can be accessed [here](https://tic-tac-toe-dusky-chi.vercel.app/).
 
 ## Contribution Guidelines
 
