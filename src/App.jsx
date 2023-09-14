@@ -1,11 +1,11 @@
-import confetti from 'canvas-confetti'
 import { useState } from 'react'
+import { TURNS } from './constants'
+import confetti from 'canvas-confetti'
 import { GameBoard } from './components/GameBord'
 import { TurnSection } from './components/TurnSection'
 import { WinnerModal } from './components/WinnerModal'
-import { TURNS } from './constants'
-import { WinnerLogic, checkEndGame } from './logic/WinnerLogic'
 import { SaveGame, resetGameStorage } from './logic/storage'
+import { WinnerLogic, checkEndGame } from './logic/WinnerLogic'
 
 function App () {
   const [board, setBoard] = useState(() => {
